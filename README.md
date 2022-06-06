@@ -2,4 +2,4 @@
 
 Frontend Developers: [Aldayar](https://github.com/GaiusJuliusCaesar38), [Erbol](https://github.com/mokrota21), [Murat](https://github.com/muratsat)
 
-Backend developer: [Temirbek](https://github.com/Insomniacboyu)
+Backend developer: [Temirbek](https://github.com/Insomniacboy)
