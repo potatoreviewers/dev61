@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.4f893c8f.css","mappings":"AAAA,KACI,wBAAiC,CACjC,UACJ,CACA,EACI,UACJ","sources":["App.css"],"sourcesContent":["body {\n    background-color: rgb(45, 45, 45);\n    color: white;\n}\na {\n    color: aqua;\n}\n"],"names":[],"sourceRoot":""}
