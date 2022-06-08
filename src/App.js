@@ -7,15 +7,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          61 school website  
+          61 school website is in development
         </p>
         <a
           className="App-link"
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          href="https://61.edubish.kg/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Current website
         </a>
       </header>
     </div>
