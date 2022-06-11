@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.70bd0b15.css","mappings":"AAAA,KACI,wBAAiC,CACjC,UAAY,CACZ,sCACJ,CACA,EACI,aACJ","sources":["App.css"],"sourcesContent":["body {\n    background-color: rgb(45, 45, 45);\n    color: white;\n    font-family: Arial, Helvetica, sans-serif;\n}\na {\n    color: lightblue;\n}\n"],"names":[],"sourceRoot":""}
