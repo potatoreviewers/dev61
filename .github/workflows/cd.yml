@@ -2,7 +2,7 @@ name: CD
 
 on:
   push:
-    branches: [ react-init ]
+    branches: [ dev ]
 
 jobs:
   build:
