@@ -26,6 +26,21 @@
   height: 60%;
   position: absolute;
   font-size: 120%;
+  font-weight: bold;
+}
+
+.Logo-circle {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  background-color: #fdfffc;
+  height: 75%;
+  width:  75%;
+  border-radius: 100%;
 }
 
 .Logo-61 {
@@ -40,7 +55,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .Logo-atom {
-    animation: atom-spin infinite 50s linear;
+    animation: atom-spin infinite 10s linear;
   }
 }
 
