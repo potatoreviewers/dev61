@@ -1,9 +1,7 @@
-name: CI/CD
+name: CD
 
 on:
   push:
-    branches: [ react-init ]
-  pull_request:
     branches: [ react-init ]
 
 jobs:
@@ -13,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
 
     steps:
     - name: Checkout repository
@@ -41,3 +39,4 @@ jobs:
         user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
         repository: ${{ github.repository }}
+
