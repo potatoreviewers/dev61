@@ -1,0 +1,54 @@
+.Logo{
+  height: 40vmin;
+  width: 40vmin;
+  text-align: center;
+  position: relative;
+}
+
+.Logo-atom{
+  height: 40vim;
+}
+
+.Logo-sqrt{
+  transform: rotate(-5deg);
+  top: 5%;
+  left: 15%;
+  height: 60%;
+  pointer-events: none;
+  position: absolute;
+}
+
+.Logo-physmath {
+  transform: rotate(-5deg);
+  color: #8f2c36;
+  top: 25%;
+  left: 25%;
+  height: 60%;
+  position: absolute;
+  font-size: 120%;
+}
+
+.Logo-61 {
+  color: #8f2c36;
+  top: 25%;
+  left: 55%;
+  height: 60%;
+  position: absolute;
+  font-size: 330%;
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Logo-atom {
+    animation: atom-spin infinite 50s linear;
+  }
+}
+
+@keyframes atom-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,8 +1,12 @@
 import './App.css';
+import Logo from './logo/logo'
 
 function App() {
   return (
     <div className="App">
+      <header className="App-header">
+        <Logo></Logo>
+
         <p>
           61 school website is in development
         </p>
@@ -14,6 +18,7 @@ function App() {
         >
           Current website
         </a>
+      </header>
     </div>
   );
 }
