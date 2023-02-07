@@ -1,0 +1,123 @@
+body {
+  margin: 0 auto;
+}
+
+/* make scrollbar invisible */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+section {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+
+#section-first {
+  background-color: #282c34;
+}
+
+.Logo {
+  color: #c84451;
+  height: 40vmin;
+  width: 40vmin;
+  text-align: center;
+  position: relative;
+  transition: 1s;
+}
+
+.Logo-atom {
+  height: 40vim;
+}
+
+.Logo-sqrt {
+  transform: rotate(-5deg);
+  top: 5%;
+  left: 15%;
+  height: 60%;
+  pointer-events: none;
+  position: absolute;
+}
+
+.Logo-physmath {
+  transform: rotate(-5deg);
+  top: 25%;
+  left: 25%;
+  height: 60%;
+  position: absolute;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.Logo-circle {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  background-color: #fdfffc;
+  height: 75%;
+  width: 75%;
+  border-radius: 100%;
+}
+
+.Logo-61 {
+  top: 25%;
+  left: 55%;
+  height: 60%;
+  position: absolute;
+  font-size: 330%;
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Logo-atom {
+    animation: atom-spin infinite 10s linear;
+  }
+
+  .Logo-atom.fast {
+    animation: atom-spin infinite 5s linear;
+  }
+}
+
+@keyframes atom-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#section-second {
+  background-color: #baaec1;
+}
+
+#rickroll {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 1s;
+}
+
+#rickroll.show {
+  opacity: 1;
+}
