@@ -1,61 +1,69 @@
-.Logo{
+.logo {
+  margin: 3vmin;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: table-cell;
+  padding: 0;
+  vertical-align: middle;
+  color: #9c222b;
+  font-weight: 600;
   height: 40vmin;
   width: 40vmin;
   text-align: center;
   position: relative;
+  /* opacity: 0; */
+  transition: 0.5s;
 }
 
-.Logo-atom{
-  height: 40vim;
-}
-
-.Logo-sqrt{
-  transform: rotate(-5deg);
-  top: 5%;
-  left: 15%;
-  height: 60%;
-  pointer-events: none;
+.atom {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
-.Logo-physmath {
-  transform: rotate(-5deg);
-  color: #8f2c36;
-  top: 25%;
-  left: 25%;
-  height: 60%;
+.orbit {
   position: absolute;
-  font-size: 120%;
-  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 80%;
+  border-radius: 50%;
+  border: 1vmin solid #281476;
+  transform: translate(-50%, -50%) rotate(30deg);
 }
 
-.Logo-circle {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-
-  background-color: #fdfffc;
-  height: 75%;
-  width:  75%;
-  border-radius: 100%;
+.orbit-1 {
+  transform: translate(-50%, -50%);
 }
 
-.Logo-61 {
-  color: #8f2c36;
-  top: 25%;
-  left: 55%;
-  height: 60%;
+.orbit-2 {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.orbit-3 {
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.nucleus {
   position: absolute;
-  font-size: 330%;
-  font-style: italic;
+  top: 50%;
+  left: 50%;
+  width: 10%;
+  height: 10%;
+  background-color: #281476;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Logo-atom {
+  .atom {
     animation: atom-spin infinite 10s linear;
+  }
+
+  .atom.loading {
+    animation: atom-spin infinite 2s cubic-bezier(.63, .18, .32, .89);
   }
 }
 
@@ -63,7 +71,95 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.sqrt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.sqrt div {
+  background-color: #969696;
+  /* background-color: #bd6363; */
+}
+
+.sqrt div:nth-child(1) {
+  width: 8%;
+  height: 2%;
+  position: absolute;
+  top: 59%;
+  left: 20%;
+}
+
+.sqrt div:nth-child(2) {
+  width: 24%;
+  height: 2%;
+  position: absolute;
+  top: 59%;
+  left: 28%;
+  transform: rotate(66deg);
+  transform-origin: 0 0;
+}
+
+.sqrt div:nth-child(3) {
+  width: 24%;
+  height: 2%;
+  position: absolute;
+  top: 59%;
+  left: 28%;
+  transform: rotate(66deg);
+  transform-origin: 0 0;
+}
+
+.sqrt div:nth-child(3) {
+  width: 43%;
+  height: 2%;
+  position: absolute;
+  top: 81%;
+  left: 37%;
+  transform: rotate(-82deg);
+  transform-origin: 0 0;
+}
+
+.sqrt div:nth-child(4) {
+  width: 36%;
+  height: 2%;
+  position: absolute;
+  top: 39%;
+  left: 43%;
+  transform: rotate(-6deg);
+  transform-origin: 0 0;
+}
+
+.sqrt div:nth-child(5) {
+  width: 6%;
+  height: 2%;
+  position: absolute;
+  top: 35%;
+  left: 78%;
+  transform: rotate(25deg);
+  transform-origin: 0 0;
+}
+
+.physmath {
+  margin: 0;
+  position: absolute;
+  font-size: 230%;
+  top: 30%;
+  left: 12%;
+  transform: rotate(-5deg);
+}
+
+.sixty-one {
+  margin: 0;
+  position: absolute;
+  font-size: 400%;
+  top: 40%;
+  left: 50%;
+  transform: rotate(10deg);
 }

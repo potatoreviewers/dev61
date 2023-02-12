@@ -5,19 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Logo></Logo>
-
-        <p>
-          61 school website is in development
-        </p>
-        <a
-          className="App-link"
-          href="https://61.edubish.kg/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Current website
-        </a>
+        <Logo isLoading={true} />
+        <h> Loading... </h>
       </header>
     </div>
   );

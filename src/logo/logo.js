@@ -1,17 +1,28 @@
-
-import atom from './atom.svg';
-import sqrt from './sqrt.svg'
 import './logo.css';
 
-function Logo() {
+function Logo({ isLoading = false }) {
   return (
-    <div className="Logo">
-        <div className="Logo-circle"></div>
-        <img src={atom} className="Logo-atom" alt="atom" />
-        <img src={sqrt} className="Logo-sqrt" alt="sqrt" />
-        <div className="Logo-physmath"> фм </div>
-        <div className="Logo-61"> 61 </div>
+    <div className="logo">
+      <div className={isLoading ? "atom loading" : "atom"}>
+        <div className="orbit orbit-1"></div>
+        <div className="orbit orbit-2"></div>
+        <div className="orbit orbit-3"></div>
+        <div className="nucleus"></div>
+      </div>
+
+      <div className="sqrt">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div className="physmath"> фм </div>
+      <div className="sixty-one"> 61 </div>
+
     </div>
+
   );
 }
 
